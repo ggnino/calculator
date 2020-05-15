@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+
+@font-face {
+  font-family: "Mio";
+  src: url(./font/DS-DIGI.TTF);
+}
+
+body {
+  background-image: linear-gradient(45deg, black, darkblue, darkred, black);
+  height: 100vh;
+}
+
+.btn {
+  border-radius: 50%;
+  font-size: xx-large;
+  text-justify: newspaper;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-shadow: 10px 5px 10px black;
+  height: 70px;
+  width: 70px;
+  border: 2px solid black;
+}
+.btn:active {
+  transform: translateY(4px);
+  background-color: initial;
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: 10px 5px 10px black;
+}
+button {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  cursor: pointer;
+}
+#logo {
+  padding: 0;
+  margin: 5px;
+  text-align: left;
+  font-size: small;
+  position: relative;
+  left: 1px;
+}
+#calculator {
+  width: fit-content;
+  background-color: red;
+  border-radius: 10%;
+  border: 2px solid black;
+  box-shadow: 12px 10px 18px black;
+}
+#buttons {
+  border: 2px solid black;
+  padding: 0;
+  border-radius: 10%;
+  width: fit-content;
+  margin: 0;
+}
+#screen1 {
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  width: fit-content;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#d {
+  position: sticky;
+  padding: 0;
+  margin: 0;
+}
+
+#screen2 {
+  border: 2px solid gray;
+  border-radius: 15px;
+  width: 300px;
+  height: 60px;
+  text-align: right;
+  background-color: grey;
+  font-family: "Mio";
+}
+#sym {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 38vw;
+}
+#buttonsRow1,
+#buttonsRow2,
+#buttonsRow3,
+#buttonsRow4,
+#buttonsRow0 {
+  width: fit-content;
+  padding: 2px;
+}
+@media (max-width: 780px) {
+  #sym {
+    left: 32vw;
+  }
+}
+
+@media (max-width: 580px) {
+  #sym {
+    left: 10vw;
+  }
+}
+@media (max-width: 412px) {
+  #sym {
+    left: 13vw;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 514px) and (max-height: 900px) {
+  #sym {
+    left: 14vw;
+  }
+}
